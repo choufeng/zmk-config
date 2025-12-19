@@ -1,0 +1,13 @@
+manifest:
+  version: "0.1"
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      url: https://github.com/zmkfirmware/zmk
+    - name: zephyr
+      remote: zephyrproject
+      revision: v3.7.0
+      url: https://github.com/zephyrproject-rtos/zephyr
+  self:
+    path: zmk-config

@@ -1,0 +1,11 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include "corne_romac.dtsi"
+
+&corne_romac {
+    keymap = <&keymap>;
+};
