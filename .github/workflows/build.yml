@@ -1,0 +1,52 @@
+name: Build ZMK Firmware
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout ZMK Config
+      uses: actions/checkout@v4
+      with:
+        path: zmk-config
+
+    - name: Checkout ZMK
+      uses: actions/checkout@v4
+      with:
+        repository: zmkfirmware/zmk
+        path: zmk
+        ref: main
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Install West
+      run: pip install west
+
+    - name: Initialize West Workspace
+      run: |
+        cd zmk-config
+        west init -l
+        west update
+
+    - name: Build Firmware
+      run: |
+        cd zmk-config
+        west build --board nice_nano --shield corne_romac
+
+    - name: Archive UF2 firmware
+      uses: actions/upload-artifact@v4
+      with:
+        name: corne_romac_firmware
+        path: |
+          build/zephyr/*.uf2
+          build/zephyr/*.hex
+        retention-days: 30
