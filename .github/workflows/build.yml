@@ -40,12 +40,12 @@ jobs:
     - name: Build Firmware
       run: |
         cd zmk-config
-        west build --board nrf52840dk/nrf52840 --shield corne_romac
+        west build --board nrf52840dk/nrf52840 --shield corne
 
     - name: Archive UF2 firmware
       uses: actions/upload-artifact@v4
       with:
-        name: corne_romac_firmware
+        name: corne_firmware
         path: |
           build/zephyr/*.uf2
           build/zephyr/*.hex

@@ -5,17 +5,17 @@
 
 include:
   - board: nrf52840dk/nrf52840
-    shield: corne_romac
+    shield: corne
   - board: nrf52840dk/nrf52840
-    shield: corne_romac_left
+    shield: corne_left
   - board: nrf52840dk/nrf52840
-    shield: corne_romac_right
+    shield: corne_right
   - board: adafruit_feather_nrf52840
-    shield: corne_romac
+    shield: corne
   - board: adafruit_feather_nrf52840
-    shield: corne_romac_left
+    shield: corne_left
   - board: adafruit_feather_nrf52840
-    shield: corne_romac_right
+    shield: corne_right
 
 # For additional boards/shields, add them to the include list above.
 # Example for split keyboards:
