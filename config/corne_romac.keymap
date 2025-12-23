@@ -52,39 +52,4 @@
             >;
         };
     };
-<<<<<<< HEAD
-};
-
-        lower_layer {
-            // 数字和符号层
-            bindings = <
-                &kp GRAVE    &kp N1    &kp N2    &kp N3    &kp N4    &kp N5    &kp N6    &kp N7    &kp N8    &kp N9
-                &kp CAPS     &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9
-                &trans       &trans    &trans    &trans    &trans    &kp N0    &kp MINUS &kp EQUAL &kp BACKSPACE &trans
-                &trans       &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        raise_layer {
-            // 方向键和功能键层
-            bindings = <
-                &kp ESC      &kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6    &kp F7    &kp F8    &kp F9
-                &kp TAB      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans     &kp HOME  &kp PAGE_DOWN &kp PAGE_UP &kp END
-                &kp LEFT_CONTROL &kp LEFT_SHIFT &kp LEFT_ALT &kp LEFT_GUI &trans &trans &trans &trans &kp DEL &kp INSERT
-                &trans       &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans    &trans
-            >;
-        };
-
-        adjust_layer {
-            // 调整层 - 蓝牙和系统设置
-            bindings = <
-                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &kp F12
-                &kp F10     &kp F11     &trans     &trans     &trans     &trans &trans &trans &trans &kp F12
-                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6  &kp F7  &kp F8  &kp F9  &kp F12
-                &trans      &trans      &trans      &trans      &trans      &trans  &trans  &trans  &trans  &trans
-            >;
-        };
-    };
-=======
->>>>>>> d28344a (Add GitHub Actions workflow for ZMK builds)
 };
