@@ -4,22 +4,22 @@
 # Add additional boards/shields here to build them as well.
 
 include:
-  - board: nice_nano
+  - board: nrf52840dk/nrf52840
     shield: corne_romac
-  - board: nice_nano
+  - board: nrf52840dk/nrf52840
     shield: corne_romac_left
-  - board: nice_nano
+  - board: nrf52840dk/nrf52840
     shield: corne_romac_right
-  - board: nice_nano_v2
+  - board: adafruit_feather_nrf52840
     shield: corne_romac
-  - board: nice_nano_v2
+  - board: adafruit_feather_nrf52840
     shield: corne_romac_left
-  - board: nice_nano_v2
+  - board: adafruit_feather_nrf52840
     shield: corne_romac_right
 
 # For additional boards/shields, add them to the include list above.
 # Example for split keyboards:
-#   - board: nice_nano
+#   - board: nrf52840dk/nrf52840
 #     shield: lily58_left
-#   - board: nice_nano
+#   - board: nrf52840dk/nrf52840
 #     shield: lily58_right

@@ -40,7 +40,7 @@ jobs:
     - name: Build Firmware
       run: |
         cd zmk-config
-        west build --board nice_nano --shield corne_romac
+        west build --board nrf52840dk/nrf52840 --shield corne_romac
 
     - name: Archive UF2 firmware
       uses: actions/upload-artifact@v4
